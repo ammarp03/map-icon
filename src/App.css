@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #fff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,27 @@
 .App-link {
   color: #61dafb;
 }
-
+.leaflet-container {
+  width: 50vw;
+  height: 50vh;
+}
+.map-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.map-grid > div {
+  padding: 20px;
+}
+.circle-magic {
+  fill: none;
+  stroke: red;
+  stroke-width: 5px;
+  transition: stroke-width 0.5s;
+}
+.circle-magic:hover {
+  stroke-width: 10px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
